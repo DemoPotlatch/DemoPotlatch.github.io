@@ -1,0 +1,625 @@
+<!doctype html>
+<html lang="en">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Browse | Potlach Demo</title>
+<link rel="shortcut icon" type="image/x-icon" href="http://localhost:4000/favicon.ico">
+<meta http-equiv="Content-Language" content="en-us" >
+
+
+
+<link rel="stylesheet" href="http://localhost:4000/assets/css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/custom.css" type="text/css">
+
+<!--<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>-->
+
+
+
+  </head>
+
+  <body>
+    <div class="container">
+    <div class="row mt-2">
+        <div class="col-md-12">
+            <h1 class="h3">
+                <a href="http://localhost:4000/" >Potlach Demo</a>
+                <small class="text-muted">| a demo site</small>
+            </h1>
+        </div>
+    </div>	
+</div>
+    <nav class="navbar navbar-expand-md navbar-dark bg-secondary">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#page-nav" aria-controls="page-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="page-nav">
+            <ul class="navbar-nav mr-auto">
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                
+                <li class="nav-item active">
+                    <a class="nav-link" href="/browse/">Browse</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/map/">Map</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/subjects/">Subjects</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/timeline/">Timeline</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/data/">Data</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/about/">About</a>
+                </li>
+                
+            </ul>
+            <script>
+                function site_search() {
+                    var query = document.getElementById("site-search").value
+                    window.open("http://localhost:4000/search/index.html?q=" + encodeURIComponent(query), "_self" );
+                }
+            </script>
+            <form class="form-inline my-2 my-lg-0" role="search" id="search" onsubmit="site_search(); return false;">
+                <div class="input-group">
+                    <input id="site-search" class="form-control " type="text" placeholder="Search" aria-label="Search box">
+                    <div class="input-group-append">
+                        <button class="btn btn-light" type="submit">
+                            <span id="search-icon"><svg viewBox="0 0 1024 974" height="16px" width="20px"><path d="M960 832L710.875 582.875C746.438 524.812 768 457.156 768 384 768 171.96900000000005 596 0 384 0 171.969 0 0 171.96900000000005 0 384c0 212 171.969 384 384 384 73.156 0 140.812-21.562 198.875-57L832 960c17.5 17.5 46.5 17.375 64 0l64-64C977.5 878.5 977.5 849.5 960 832zM384 640c-141.375 0-256-114.625-256-256s114.625-256 256-256 256 114.625 256 256S525.375 640 384 640z"/></svg></span>
+                            <span class="sr-only">Search</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</nav>
+
+    <main role="main">
+    <div class="container mt-4">
+    
+
+
+
+
+<div class="row mb-3 justify-content-center">
+    <div class="col-md-8 text-center">
+        <div class="input-group input-group-lg">
+            <input type="text" class="form-control form-control-lg" id="quicksearch" placeholder="Filter ... " > 
+            <div class="input-group-append">
+                <button class="btn btn-success" type="button" title="Search" alt="Search" id="goButton" onclick="filterItems()">Search</button>
+                <a class="btn btn-outline-secondary filter" href="#" data-filter="">Reset</a>    
+            </div>
+        </div>
+        <span class="info2 h2"><span id="numberof">15</span> of 15 items</span>
+    </div>
+</div>
+
+<div class="row" id="browse-items">
+    
+    <div class="item col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2" >
+        <div class="card">
+            <a href="http://localhost:4000/browse/item.html?id=test001">
+                <img class="card-img-top lazy" src="/objects/thumbs/test001_sm.jpg" alt="collection object image">
+            </a>
+            <div class="card-body text-center search">
+                <h3 class="card-title">Administration Building, University of Idaho, No. 30</h3>
+                <p class="card-text"><strong>Date:</strong> 1910</p>
+                <p>
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="universities" href="/browse/#universities">universities</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="buildings" href="/browse/#buildings">buildings</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="campuses" href="/browse/#campuses">campuses</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="picture postcards" href="/browse/#picture%20postcards">picture postcards</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="Moscow, Idaho" href="/browse/#Moscow,%20Idaho">Moscow, Idaho</a> 
+                     
+                </p>
+                <p class="card-text">Photographic postcard of the University of Idaho administration building in Moscow, Idaho.</p>
+                <p>
+                    <a href="http://localhost:4000/browse/item.html?id=test001" class="btn btn-info" title="link to Administration Building, University of Idaho, No. 30">View Item</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="item col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2" >
+        <div class="card">
+            <a href="http://localhost:4000/browse/item.html?id=test002">
+                <img class="card-img-top lazy" src="/objects/thumbs/test002_sm.jpg" alt="collection object image">
+            </a>
+            <div class="card-body text-center search">
+                <h3 class="card-title">Noll Aduitorium [Bryan Hall]</h3>
+                <p class="card-text"><strong>Date:</strong> 1915-11-03</p>
+                <p>
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="universities" href="/browse/#universities">universities</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="buildings" href="/browse/#buildings">buildings</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="clock towers (towers)" href="/browse/#clock%20towers%20(towers)">clock towers (towers)</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="picture postcards" href="/browse/#picture%20postcards">picture postcards</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="Pullman, Washington" href="/browse/#Pullman,%20Washington">Pullman, Washington</a> 
+                     
+                </p>
+                <p class="card-text">Photographic postcard of Bryan Hall on the Washington State University campus (mislabeled 'Noll Aduitorium'). Card is damaged and held together...</p>
+                <p>
+                    <a href="http://localhost:4000/browse/item.html?id=test002" class="btn btn-info" title="link to Noll Aduitorium [Bryan Hall]">View Item</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="item col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2" >
+        <div class="card">
+            <a href="http://localhost:4000/browse/item.html?id=test003">
+                <img class="card-img-top lazy" src="/objects/thumbs/test003_sm.jpg" alt="collection object image">
+            </a>
+            <div class="card-body text-center search">
+                <h3 class="card-title">University farms</h3>
+                <p class="card-text"><strong>Date:</strong> 1895</p>
+                <p>
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="campuses" href="/browse/#campuses">campuses</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="farms" href="/browse/#farms">farms</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="horse-drawn vehicles" href="/browse/#horse-drawn%20vehicles">horse-drawn vehicles</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="Moscow, Idaho" href="/browse/#Moscow,%20Idaho">Moscow, Idaho</a> 
+                     
+                </p>
+                <p class="card-text">1895 photograph of University Farms. Moscow in background. [PG1_105-15]</p>
+                <p>
+                    <a href="http://localhost:4000/browse/item.html?id=test003" class="btn btn-info" title="link to University farms">View Item</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="item col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2" >
+        <div class="card">
+            <a href="http://localhost:4000/browse/item.html?id=test004">
+                <img class="card-img-top lazy" src="/objects/thumbs/test004_sm.jpg" alt="collection object image">
+            </a>
+            <div class="card-body text-center search">
+                <h3 class="card-title">University farms, University of Idaho in distance</h3>
+                <p class="card-text"><strong>Date:</strong> 1900</p>
+                <p>
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="campuses" href="/browse/#campuses">campuses</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="farms" href="/browse/#farms">farms</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="fields (land)" href="/browse/#fields%20(land)">fields (land)</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="Moscow, Idaho" href="/browse/#Moscow,%20Idaho">Moscow, Idaho</a> 
+                     
+                </p>
+                <p class="card-text">1900 photograph of University Farms. Spanish American War Memorial in background. [PG1_105-16]</p>
+                <p>
+                    <a href="http://localhost:4000/browse/item.html?id=test004" class="btn btn-info" title="link to University farms, University of Idaho in distance">View Item</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="item col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2" >
+        <div class="card">
+            <a href="http://localhost:4000/browse/item.html?id=test005">
+                <img class="card-img-top lazy" src="/objects/thumbs/test005_sm.jpg" alt="collection object image">
+            </a>
+            <div class="card-body text-center search">
+                <h3 class="card-title">Administration Building, Washington State College</h3>
+                <p class="card-text"><strong>Date:</strong> 1905</p>
+                <p>
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="universities" href="/browse/#universities">universities</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="buildings" href="/browse/#buildings">buildings</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="campuses" href="/browse/#campuses">campuses</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="picture postcards" href="/browse/#picture%20postcards">picture postcards</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="Pullman, Washington" href="/browse/#Pullman,%20Washington">Pullman, Washington</a> 
+                     
+                </p>
+                <p class="card-text">Photographic postcard of the administration building on the Washington State University campus in Pullman, Washington</p>
+                <p>
+                    <a href="http://localhost:4000/browse/item.html?id=test005" class="btn btn-info" title="link to Administration Building, Washington State College">View Item</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="item col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2" >
+        <div class="card">
+            <a href="http://localhost:4000/browse/item.html?id=test006">
+                <img class="card-img-top lazy" src="/objects/thumbs/test006_sm.jpg" alt="collection object image">
+            </a>
+            <div class="card-body text-center search">
+                <h3 class="card-title">Tacoma High School, Tacoma, Washington</h3>
+                <p class="card-text"><strong>Date:</strong> 1909-07-17</p>
+                <p>
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="high schools (buildings)" href="/browse/#high%20schools%20(buildings)">high schools (buildings)</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="historic buildings" href="/browse/#historic%20buildings">historic buildings</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="trees" href="/browse/#trees">trees</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="horse-drawn vehicles" href="/browse/#horse-drawn%20vehicles">horse-drawn vehicles</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="picture postcards" href="/browse/#picture%20postcards">picture postcards</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="flagpoles" href="/browse/#flagpoles">flagpoles</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="flags" href="/browse/#flags">flags</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="Tacoma, Washington" href="/browse/#Tacoma,%20Washington">Tacoma, Washington</a> 
+                     
+                </p>
+                <p class="card-text">Postcard is of a Tacoma, Washington High School, now named Stadium High School. Postmark 7/17/1909, Tacoma, WA. Destination Helena, MT....</p>
+                <p>
+                    <a href="http://localhost:4000/browse/item.html?id=test006" class="btn btn-info" title="link to Tacoma High School, Tacoma, Washington">View Item</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="item col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2" >
+        <div class="card">
+            <a href="http://localhost:4000/browse/item.html?id=test007">
+                <img class="card-img-top lazy" src="/objects/thumbs/test007_sm.jpg" alt="collection object image">
+            </a>
+            <div class="card-body text-center search">
+                <h3 class="card-title">Pierce County Court House, Tacoma, Washington</h3>
+                <p class="card-text"><strong>Date:</strong> 1911-02-23</p>
+                <p>
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="public buildings" href="/browse/#public%20buildings">public buildings</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="county courthouses" href="/browse/#county%20courthouses">county courthouses</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="trees" href="/browse/#trees">trees</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="historic buildings" href="/browse/#historic%20buildings">historic buildings</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="picture postcards" href="/browse/#picture%20postcards">picture postcards</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="Tacoma, Washington" href="/browse/#Tacoma,%20Washington">Tacoma, Washington</a> 
+                     
+                </p>
+                <p class="card-text">Postcard is of the old Pierce County Courthouse in Tacoma, Washington. The building was demolished in 1959. Postmark 2/23/1911, Tacoma,...</p>
+                <p>
+                    <a href="http://localhost:4000/browse/item.html?id=test007" class="btn btn-info" title="link to Pierce County Court House, Tacoma, Washington">View Item</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="item col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2" >
+        <div class="card">
+            <a href="http://localhost:4000/browse/item.html?id=test008">
+                <img class="card-img-top lazy" src="/objects/thumbs/test008_sm.jpg" alt="collection object image">
+            </a>
+            <div class="card-body text-center search">
+                <h3 class="card-title">Spokane County Court House, Spokane, Washington</h3>
+                <p class="card-text"><strong>Date:</strong> 1912-09-08</p>
+                <p>
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="public buildings" href="/browse/#public%20buildings">public buildings</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="county courthouses" href="/browse/#county%20courthouses">county courthouses</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="trees" href="/browse/#trees">trees</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="picture postcards" href="/browse/#picture%20postcards">picture postcards</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="Spokane, Washington" href="/browse/#Spokane,%20Washington">Spokane, Washington</a> 
+                     
+                </p>
+                <p class="card-text">Postcard is of the Spokane County Courthouse in Spokane, Washington. Postmark 9/8/1912, Spokane, WA. Destination San Francisco, CA.</p>
+                <p>
+                    <a href="http://localhost:4000/browse/item.html?id=test008" class="btn btn-info" title="link to Spokane County Court House, Spokane, Washington">View Item</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="item col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2" >
+        <div class="card">
+            <a href="http://localhost:4000/browse/item.html?id=test009">
+                <img class="card-img-top lazy" src="/objects/thumbs/test009_sm.jpg" alt="collection object image">
+            </a>
+            <div class="card-body text-center search">
+                <h3 class="card-title">Whatcom County Court House, Bellingham, Washington</h3>
+                <p class="card-text"><strong>Date:</strong> 1920</p>
+                <p>
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="public buildings" href="/browse/#public%20buildings">public buildings</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="county courthouses" href="/browse/#county%20courthouses">county courthouses</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="trees" href="/browse/#trees">trees</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="picture postcards" href="/browse/#picture%20postcards">picture postcards</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="Bellingham, Washington" href="/browse/#Bellingham,%20Washington">Bellingham, Washington</a> 
+                     
+                </p>
+                <p class="card-text">Postcard of the Whatcom County Courthouse in Bellingham, Washington.</p>
+                <p>
+                    <a href="http://localhost:4000/browse/item.html?id=test009" class="btn btn-info" title="link to Whatcom County Court House, Bellingham, Washington">View Item</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="item col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2" >
+        <div class="card">
+            <a href="http://localhost:4000/browse/item.html?id=test010">
+                <img class="card-img-top lazy" src="/objects/thumbs/test010_sm.jpg" alt="collection object image">
+            </a>
+            <div class="card-body text-center search">
+                <h3 class="card-title">Hotel Seattle, Seattle, Washington</h3>
+                <p class="card-text"><strong>Date:</strong> 1901</p>
+                <p>
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="hotels (public accommodations)" href="/browse/#hotels%20(public%20accommodations)">hotels (public accommodations)</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="buildings" href="/browse/#buildings">buildings</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="men" href="/browse/#men">men</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="streetcars" href="/browse/#streetcars">streetcars</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="photographic" href="/browse/#photographic">photographic</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="Seattle, Washington" href="/browse/#Seattle,%20Washington">Seattle, Washington</a> 
+                     
+                </p>
+                <p class="card-text">Postcard is of the Seattle Hotel in Seattle, Washington.</p>
+                <p>
+                    <a href="http://localhost:4000/browse/item.html?id=test010" class="btn btn-info" title="link to Hotel Seattle, Seattle, Washington">View Item</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="item col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2" >
+        <div class="card">
+            <a href="http://localhost:4000/browse/item.html?id=test011">
+                <img class="card-img-top lazy" src="/objects/thumbs/test011_sm.jpg" alt="collection object image">
+            </a>
+            <div class="card-body text-center search">
+                <h3 class="card-title">Snowstorm Concentrator, Troy, Montana. No. 6.</h3>
+                <p class="card-text"><strong>Date:</strong> 1911</p>
+                <p>
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="mining" href="/browse/#mining">mining</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="mines (extracting complexes)" href="/browse/#mines%20(extracting%20complexes)">mines (extracting complexes)</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="mine buildings" href="/browse/#mine%20buildings">mine buildings</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="men" href="/browse/#men">men</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="photographic postcards" href="/browse/#photographic%20postcards">photographic postcards</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="Troy, Montana" href="/browse/#Troy,%20Montana">Troy, Montana</a> 
+                     
+                </p>
+                <p class="card-text">Postcard of the concentrator building of the Snow Storm mine in Troy, Montana.</p>
+                <p>
+                    <a href="http://localhost:4000/browse/item.html?id=test011" class="btn btn-info" title="link to Snowstorm Concentrator, Troy, Montana. No. 6.">View Item</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="item col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2" >
+        <div class="card">
+            <a href="http://localhost:4000/browse/item.html?id=test012">
+                <img class="card-img-top lazy" src="/objects/thumbs/test012_sm.jpg" alt="collection object image">
+            </a>
+            <div class="card-body text-center search">
+                <h3 class="card-title">Natatorium, Boise, Idaho</h3>
+                <p class="card-text"><strong>Date:</strong> 1912</p>
+                <p>
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="swimming pools" href="/browse/#swimming%20pools">swimming pools</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="trees" href="/browse/#trees">trees</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="buildings" href="/browse/#buildings">buildings</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="indoor swimming pools" href="/browse/#indoor%20swimming%20pools">indoor swimming pools</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="photographic postcards" href="/browse/#photographic%20postcards">photographic postcards</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="Boise, Idaho" href="/browse/#Boise,%20Idaho">Boise, Idaho</a> 
+                     
+                </p>
+                <p class="card-text">Postcard is a photograph of a geothermal swimming pool that was located in Boise, Idaho.</p>
+                <p>
+                    <a href="http://localhost:4000/browse/item.html?id=test012" class="btn btn-info" title="link to Natatorium, Boise, Idaho">View Item</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="item col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2" >
+        <div class="card">
+            <a href="http://localhost:4000/browse/item.html?id=test013">
+                <img class="card-img-top lazy" src="/objects/thumbs/test013_sm.jpg" alt="collection object image">
+            </a>
+            <div class="card-body text-center search">
+                <h3 class="card-title">C. Weisgerber Brewery. Lewiston, Idaho.</h3>
+                <p class="card-text"><strong>Date:</strong> 1905</p>
+                <p>
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="breweries" href="/browse/#breweries">breweries</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="Lewiston, Idaho" href="/browse/#Lewiston,%20Idaho">Lewiston, Idaho</a> 
+                     
+                </p>
+                <p class="card-text">Image of brewery building with horse cart and dog sitting on the street.</p>
+                <p>
+                    <a href="http://localhost:4000/browse/item.html?id=test013" class="btn btn-info" title="link to C. Weisgerber Brewery. Lewiston, Idaho.">View Item</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="item col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2" >
+        <div class="card">
+            <a href="http://localhost:4000/browse/item.html?id=test014">
+                <img class="card-img-top lazy" src="/objects/thumbs/test014_sm.jpg" alt="collection object image">
+            </a>
+            <div class="card-body text-center search">
+                <h3 class="card-title">Albion State Normal School. Old Administration Building. Albion, Idaho.</h3>
+                <p class="card-text"><strong>Date:</strong> 1915</p>
+                <p>
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="schools" href="/browse/#schools">schools</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="Albion, Idaho" href="/browse/#Albion,%20Idaho">Albion, Idaho</a> 
+                     
+                </p>
+                <p class="card-text">Photograph of old Administration Building.</p>
+                <p>
+                    <a href="http://localhost:4000/browse/item.html?id=test014" class="btn btn-info" title="link to Albion State Normal School. Old Administration Building. Albion, Idaho.">View Item</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="item col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2" >
+        <div class="card">
+            <a href="http://localhost:4000/browse/item.html?id=test015">
+                <img class="card-img-top lazy" src="/objects/thumbs/test015_sm.jpg" alt="collection object image">
+            </a>
+            <div class="card-body text-center search">
+                <h3 class="card-title">Cottonwood Public School [under construction?]. Cottonwood, Idaho.</h3>
+                <p class="card-text"><strong>Date:</strong> 1912</p>
+                <p>
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="schools" href="/browse/#schools">schools</a> 
+                    
+                    <a class="btn btn-sm btn-secondary m-1 filter" data-filter="Cottonwood, Idaho" href="/browse/#Cottonwood,%20Idaho">Cottonwood, Idaho</a> 
+                     
+                </p>
+                <p class="card-text">Twelve men posed outside building</p>
+                <p>
+                    <a href="http://localhost:4000/browse/item.html?id=test015" class="btn btn-info" title="link to Cottonwood Public School [under construction?]. Cottonwood, Idaho.">View Item</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+</div>
+</div>
+
+    </main>
+    <footer class="navbar navbar-dark bg-secondary mt-3">
+    <div class="container py-3">
+        <a class="navbar-brand" href="http://localhost:4000/">Potlach Demo</a>
+        <span class="navbar-text navbar-nav mr-auto">2018</span><br>
+        <span class="navbar-text navbar-nav">built with <a href="https://github.com/CollectionBuilder/collectionbuilder-gh" target="_blank">collectionbuilder-gh <img src="/assets/images/collectionbuilder2.png" style="height:1em;"></a> </span>
+    </div>
+</footer>
+
+    <!-- Optional JS for Bootstrap: jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="/assets/js/jquery-3.3.1.min.js"></script>
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+<!-- load other js -->
+
+
+
+
+
+<script src="/assets/js/jquery.lazyload.js"></script>
+<script>
+  var $imgs = $("img.lazy");
+  // Lazy Load images when they appear in DOM
+  $imgs.lazyload({ 
+        effect: "fadeIn",
+        failure_limit: Math.max($imgs.length - 1, 0)
+  });
+
+  function filterItems() {
+    var input, filter, table, tr, td, i;
+    input = document.getElementById("quicksearch");
+    filter = input.value.toUpperCase();
+    itemcontainer = document.getElementById("browse-items");
+    item = itemcontainer.getElementsByClassName("item");
+    for (i = 0; i < item.length; i++) {
+      itemcontents = item[i].getElementsByClassName("search")[0];
+      if (itemcontents) {
+        if (itemcontents.innerText.toUpperCase().indexOf(filter) > -1) {
+          item[i].style.display = "";
+        } else {
+          item[i].style.display = "none";
+        }
+      }       
+    }
+    var numberofint = $('div.card:visible').length;
+    $("#numberof").html(numberofint);
+  }
+
+  // filter items by entering value of button or link pushed into quicksearch box
+  var filterit = function() {
+    $('#quicksearch').val('');
+    $(this).addClass('active');
+    $('a.filter').not(this).removeClass('active');
+      var filterValue = $(this).attr('data-filter');
+      
+    $('#quicksearch').val($('#quicksearch').val() + filterValue);
+    $('#goButton').click();
+    
+    $imgs.lazyload();
+    $("#goButton").focus();
+  };
+  // run filterit function when link/button with class filter clicked
+  $('a.filter').click(filterit);
+
+  // trigger imgs to lazy load upon click of go button
+  $('#goButton').click( function() {
+    $imgs.lazyload();
+  });
+
+  // click goButton to search if return pressed in search box
+  $('#quicksearch').keypress(function(e){
+    if(e.which == 13){//Enter key pressed
+        $('#goButton').click();
+        $imgs.lazyload();
+        //Trigger search button click event
+      }
+  });
+
+  // get hash from url
+  var hashfilter = decodeURIComponent(location.hash.substr(1));//.replace(/%20/g, " "); 
+
+  $(document).ready(function() {
+    $("#quicksearch").focus();
+    if(window.location.hash) {
+    // code to be executed if a hash is contained in the url
+    $('#quicksearch').val($('#quicksearch').val() + hashfilter);
+    $('#goButton').click();
+    $imgs.lazyload();
+    }
+    else{ }
+  });
+</script>
+
+
+
+
+  </body>
+
+</html>

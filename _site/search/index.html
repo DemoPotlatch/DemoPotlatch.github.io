@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Site Search | Potlach Demo</title>
+<link rel="shortcut icon" type="image/x-icon" href="http://localhost:4000/favicon.ico">
+<meta http-equiv="Content-Language" content="en-us" >
+
+
+
+<link rel="stylesheet" href="http://localhost:4000/assets/css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/custom.css" type="text/css">
+
+<!--<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>-->
+
+
+
+  </head>
+
+  <body>
+    <div class="container">
+    <div class="row mt-2">
+        <div class="col-md-12">
+            <h1 class="h3">
+                <a href="http://localhost:4000/" >Potlach Demo</a>
+                <small class="text-muted">| a demo site</small>
+            </h1>
+        </div>
+    </div>	
+</div>
+    <nav class="navbar navbar-expand-md navbar-dark bg-secondary">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#page-nav" aria-controls="page-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="page-nav">
+            <ul class="navbar-nav mr-auto">
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/browse/">Browse</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/map/">Map</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/subjects/">Subjects</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/timeline/">Timeline</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/data/">Data</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/about/">About</a>
+                </li>
+                
+            </ul>
+            <script>
+                function site_search() {
+                    var query = document.getElementById("site-search").value
+                    window.open("http://localhost:4000/search/index.html?q=" + encodeURIComponent(query), "_self" );
+                }
+            </script>
+            <form class="form-inline my-2 my-lg-0" role="search" id="search" onsubmit="site_search(); return false;">
+                <div class="input-group">
+                    <input id="site-search" class="form-control " type="text" placeholder="Search" aria-label="Search box">
+                    <div class="input-group-append">
+                        <button class="btn btn-light" type="submit">
+                            <span id="search-icon"><svg viewBox="0 0 1024 974" height="16px" width="20px"><path d="M960 832L710.875 582.875C746.438 524.812 768 457.156 768 384 768 171.96900000000005 596 0 384 0 171.969 0 0 171.96900000000005 0 384c0 212 171.969 384 384 384 73.156 0 140.812-21.562 198.875-57L832 960c17.5 17.5 46.5 17.375 64 0l64-64C977.5 878.5 977.5 849.5 960 832zM384 640c-141.375 0-256-114.625-256-256s114.625-256 256-256 256 114.625 256 256S525.375 640 384 640z"/></svg></span>
+                            <span class="sr-only">Search</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</nav>
+
+    <main role="main">
+    <div class="container mt-4">
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#operators">Search Operators!</button>
+<!-- Modal -->
+<div class="modal fade" id="operators" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel">Lunr Search Operators</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>Specific fields (e.g. title:foo, date:1911, subject:tree)</li>
+                    <li>Wildcards (e.g. foo*, *oo)</li>
+                    <li>Fuzzy match, helps with misspelling (e.g. foo~1)</li>
+                    <li>Boost term (e.g. foo^10)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h2 id="full-metadata-search">Full metadata search:</h2>
+
+
+<div class="ml-3">
+    <input type="text" id="search" class="form-control" placeholder="Enter your search term...">
+    <table id="results" class="table table-responsive"></table>
+</div>
+
+<div class="mt-3">
+    <p class="text-muted">Fuzzy search powered by <a href="https://lunrjs.com/" target="_blank">Lunr.js</a>. <em>May take a second to load large collections!</em></p>
+    
+</div>
+
+</div>
+
+    </main>
+    <footer class="navbar navbar-dark bg-secondary mt-3">
+    <div class="container py-3">
+        <a class="navbar-brand" href="http://localhost:4000/">Potlach Demo</a>
+        <span class="navbar-text navbar-nav mr-auto">2018</span><br>
+        <span class="navbar-text navbar-nav">built with <a href="https://github.com/CollectionBuilder/collectionbuilder-gh" target="_blank">collectionbuilder-gh <img src="/assets/images/collectionbuilder2.png" style="height:1em;"></a> </span>
+    </div>
+</footer>
+
+    <!-- Optional JS for Bootstrap: jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="/assets/js/jquery-3.3.1.min.js"></script>
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+<!-- load other js -->
+
+
+
+
+<script src="http://localhost:4000/assets/js/lunr.min.js"></script>
+<script src="http://localhost:4000/assets/js/lunr-store.js"></script>
+<script>
+/* initialize lunr */
+var idx = lunr(function () {
+  this.ref('id')
+  this.field('title')
+  this.field('creator')
+  this.field('subjects')
+  this.field('description')
+  this.field('date')
+  this.field('place')
+
+  //this.pipeline.remove(lunr.trimmer)
+
+  for (var item in store) {
+    this.add({
+      title: store[item].title,
+      creator: store[item].creator,
+      subjects: store[item].subjects.join("; "),
+      description: store[item].description,
+      date: store[item].date,
+      place: store[item].place,
+      id: item
+    })
+  }
+});
+
+/* search function */
+function lunr_search () {
+  var resultdiv = $('#results');
+  var query = $('input#search').val();//.toLowerCase();
+  /* basic search that supports operators */
+  var result = idx.search(query); 
+  /* more fuzzy search, but doesn't support operators:
+  var result =
+    idx.query(function (q) {
+      query.split(lunr.tokenizer.separator).forEach(function (term) {
+        q.term(term, { boost: 100 })
+        if(query.lastIndexOf(" ") != query.length-1){
+          q.term(term, {  usePipeline: false, wildcard: lunr.Query.wildcard.TRAILING, boost: 10 })
+        }
+        if (term != ""){
+          q.term(term, {  usePipeline: false, editDistance: 1, boost: 1 })
+        }
+      })
+    });*/
+  resultdiv.empty();
+  resultdiv.prepend('<p class="">' + result.length + ' Result(s) found</p>');
+  for (var item in result) {
+    var ref = result[item].ref;
+    var searchitem =
+      '<tr>'+
+          '<td class="">' +
+            '<p class="h4"><a href="/browse/item.html?id=' + store[ref].indexId + '">' + store[ref].title+ '</a></p>' +
+            '<p class="ml-3">' +
+            store[ref].date + '. ' +
+            store[ref].description.split(" ").splice(0,20).join(" ") + '...<br>' +
+            'Subjects: ' + store[ref].subjects.join("; ") + '. ' +
+            store[ref].place +
+            '</p></td>' +
+      '</tr>';
+    resultdiv.append(searchitem);
+  }
+}
+/* init search box and get query string */
+$(document).ready(function() {
+  $('input#search').on('keyup', lunr_search );
+  var queryString = decodeURIComponent(window.location.search.substring(1).split("=")[1]);
+  if (queryString) { 
+    $('input#search').val(queryString);
+    lunr_search (); 
+  }
+});
+</script>
+
+
+
+
+  </body>
+
+</html>

@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>About | Potlach Demo</title>
+<link rel="shortcut icon" type="image/x-icon" href="http://localhost:4000/favicon.ico">
+<meta http-equiv="Content-Language" content="en-us" >
+<meta name="author" content="evanwill" >
+<meta name="keywords" content="university of idaho, digital collections, digital humanities" >
+<meta name="description" content="CollectionBuilder-GH is a template for creating small digital collection exhibits on GitHub Pages designed for teaching digital library skills">
+<!-- Open Graph meta -->
+<meta property="og:title" content="About" />
+<meta property="og:description" content="CollectionBuilder-GH is a template for creating small digital collection exhibits on GitHub Pages designed for teaching digital library skills" />
+<meta property="og:image" content="http://localhost:4000/objects/test001.jpg" />
+<meta property="og:site_name" content="Potlach Demo" />
+<meta property="og:url" content="http://localhost:4000/about/" />
+<meta property="og:locale" content="en_US" />
+<!-- schema.org JSON-LD -->
+<script type="application/ld+json">{ "@context":"http://schema.org", "@type":"WebPage", "headline":"About", "author": { "@type":"Person", "name":"evanwill"}, "description":"CollectionBuilder-GH is a template for creating small digital collection exhibits on GitHub Pages designed for teaching digital library skills", "image": "http://localhost:4000/objects/test001.jpg", "url":"http://localhost:4000/about/" }</script> 
+
+
+
+<link rel="stylesheet" href="http://localhost:4000/assets/css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/custom.css" type="text/css">
+
+<!--<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>-->
+
+
+
+  </head>
+
+  <body>
+    <div class="container">
+    <div class="row mt-2">
+        <div class="col-md-12">
+            <h1 class="h3">
+                <a href="http://localhost:4000/" >Potlach Demo</a>
+                <small class="text-muted">| a demo site</small>
+            </h1>
+        </div>
+    </div>	
+</div>
+    <nav class="navbar navbar-expand-md navbar-dark bg-secondary">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#page-nav" aria-controls="page-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="page-nav">
+            <ul class="navbar-nav mr-auto">
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/browse/">Browse</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/map/">Map</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/subjects/">Subjects</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/timeline/">Timeline</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/data/">Data</a>
+                </li>
+                
+                <li class="nav-item active">
+                    <a class="nav-link" href="/about/">About</a>
+                </li>
+                
+            </ul>
+            <script>
+                function site_search() {
+                    var query = document.getElementById("site-search").value
+                    window.open("http://localhost:4000/search/index.html?q=" + encodeURIComponent(query), "_self" );
+                }
+            </script>
+            <form class="form-inline my-2 my-lg-0" role="search" id="search" onsubmit="site_search(); return false;">
+                <div class="input-group">
+                    <input id="site-search" class="form-control " type="text" placeholder="Search" aria-label="Search box">
+                    <div class="input-group-append">
+                        <button class="btn btn-light" type="submit">
+                            <span id="search-icon"><svg viewBox="0 0 1024 974" height="16px" width="20px"><path d="M960 832L710.875 582.875C746.438 524.812 768 457.156 768 384 768 171.96900000000005 596 0 384 0 171.969 0 0 171.96900000000005 0 384c0 212 171.969 384 384 384 73.156 0 140.812-21.562 198.875-57L832 960c17.5 17.5 46.5 17.375 64 0l64-64C977.5 878.5 977.5 849.5 960 832zM384 640c-141.375 0-256-114.625-256-256s114.625-256 256-256 256 114.625 256 256S525.375 640 384 640z"/></svg></span>
+                            <span class="sr-only">Search</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</nav>
+
+    <main role="main">
+    <div class="container mt-4">
+    <style>
+#jumbo-feature {
+    background-image: url('/objects/test001.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+</style>
+
+<div class="jumbotron feature text-white" id="jumbo-feature">
+    <h2 class="display-4">Potlach Demo</h2>
+    <p>a demo site</p>
+</div>
+
+<h1 id="about-potlach-demo">About Potlach Demo</h1>
+
+<p>Demo potlatch.
+This site is generated using <code class="highlighter-rouge">collectionbuilder-gh</code>, a project to generate a free and simple digital collection using <a href="https://pages.github.com/">GitHub Pages</a> from:</p>
+
+<ul>
+  <li>a CSV of collection metadata</li>
+  <li>a folder of JPEG images or PDF documents</li>
+</ul>
+
+<p><code class="highlighter-rouge">collectionbuilder-gh</code> is intended as a simple template for hands-on teaching about digital libraries.
+It can be used in a workshop setting to take participants through digitization and metadata creation, to having a live collection site hosted on GitHub.</p>
+
+<p>Similar learning experiences use <a href="https://omeka.org/">Omeka</a> or other DAMS/<a href="https://en.wikipedia.org/wiki/Content_management_system">CMS</a> platforms that are overkill for one off projects.
+Although CMS feature familiar GUI administration interfaces, they are not simple to learn and customize.
+<code class="highlighter-rouge">collectionbuilder-gh</code> aims to be well documented and easy to configure by following the example.
+A project in “minimal computing”, it provides a depth of learning opportunities, allowing users to take complete ownership over the project and make their work open to the world.</p>
+
+<h2 id="learn-about">Learn about:</h2>
+
+<ul>
+  <li>Git and GitHub basics for collaboration and project management</li>
+  <li><a href="https://guides.github.com/features/mastering-markdown/">Markdown</a> for plaintext writing and content creation</li>
+  <li>HTML, CSS, and JS literacy</li>
+  <li>commandline literacy</li>
+  <li><a href="https://jekyllrb.com/">Jekyll</a> basics</li>
+  <li>working in the Open, open source and open data</li>
+  <li>digital libraries concepts such as “collections as data”, minimal computing, data-driven design</li>
+</ul>
+
+<div class="card my-4">
+<h5 class="card-header">Technical</h5>
+<div class="card-body">
+<div class="card-text">
+
+      <p><a href="https://github.com/CollectionBuilder/collectionbuilder-gh">CollectionBuilder</a> is a project of University of Idaho Library’s <a href="https://www.lib.uidaho.edu/digital/">Digital Initiatives</a> as part of the Lib-STATIC toolkit. 
+It uses the open source static site generator <a href="https://jekyllrb.com/">Jekyll</a> built into hosting from <a href="https://pages.github.com/">GitHub Pages</a>.
+The basic frame work is created using <a href="https://getbootstrap.com/">Bootstrap</a> and <a href="https://jquery.com/">jQuery</a>.
+Metadata visualizations are created using <a href="https://datatables.net/">DataTables</a>, <a href="http://leafletjs.com/">Leafletjs</a>, and <a href="https://lunrjs.com/">Lunr.js</a>.
+Document metadata is exposed using <a href="http://schema.org">Schema.org</a> and <a href="http://ogp.me/">Open Graph protocol</a> standards.</p>
+
+      <p>Questions can be directed to <strong>libstatic.uidaho@gmail.com</strong></p>
+
+      <p>Get the <a href="https://github.com/CollectionBuilder/collectionbuilder-gh">Source code</a> for this site!</p>
+
+      <p>Last build date: 2018-12-14.</p>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+    </main>
+    <footer class="navbar navbar-dark bg-secondary mt-3">
+    <div class="container py-3">
+        <a class="navbar-brand" href="http://localhost:4000/">Potlach Demo</a>
+        <span class="navbar-text navbar-nav mr-auto">2018</span><br>
+        <span class="navbar-text navbar-nav">built with <a href="https://github.com/CollectionBuilder/collectionbuilder-gh" target="_blank">collectionbuilder-gh <img src="/assets/images/collectionbuilder2.png" style="height:1em;"></a> </span>
+    </div>
+</footer>
+
+    <!-- Optional JS for Bootstrap: jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="/assets/js/jquery-3.3.1.min.js"></script>
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+<!-- load other js -->
+
+
+
+
+
+
+
+
+
+  </body>
+
+</html>

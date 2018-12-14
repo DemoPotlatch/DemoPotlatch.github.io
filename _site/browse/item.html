@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Collection Item | Potlach Demo</title>
+<link rel="shortcut icon" type="image/x-icon" href="http://localhost:4000/favicon.ico">
+<meta http-equiv="Content-Language" content="en-us" >
+
+<meta name="author" content="evanwill" >
+<meta name="keywords" content="university of idaho, digital collections, digital humanities" >
+<meta name="description" content="Objects from Potlach Demo. CollectionBuilder-GH is a template for creating small digital collection exhibits on GitHub Pages designed for teaching digital library skills">
+
+<!-- Open Graph meta -->
+<meta property="og:title" content="Collection Item" />
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Objects from Potlach Demo. CollectionBuilder-GH is a template for creating small digital collection exhibits on GitHub Pages designed for teaching digital library skills" />
+<meta property="og:site_name" content="Potlach Demo" />
+<meta property="og:url" content="http://localhost:4000/browse/item.html" />
+<meta property="og:locale" content="en_US" />
+<!-- schema.org JSON-LD -->
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebPage","headline":"Collection Item","author":{"@type":"Person","name":"evanwill"},"description":"CollectionBuilder-GH is a template for creating small digital collection exhibits on GitHub Pages designed for teaching digital library skills","url":"http://localhost:4000/browse/item.html"}</script>
+
+
+<link rel="stylesheet" href="http://localhost:4000/assets/css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/custom.css" type="text/css">
+
+<!--<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>-->
+
+
+
+  </head>
+
+  <body>
+    <div class="container">
+    <div class="row mt-2">
+        <div class="col-md-12">
+            <h1 class="h3">
+                <a href="http://localhost:4000/" >Potlach Demo</a>
+                <small class="text-muted">| a demo site</small>
+            </h1>
+        </div>
+    </div>	
+</div>
+    <nav class="navbar navbar-expand-md navbar-dark bg-secondary">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#page-nav" aria-controls="page-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="page-nav">
+            <ul class="navbar-nav mr-auto">
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/browse/">Browse</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/map/">Map</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/subjects/">Subjects</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/timeline/">Timeline</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/data/">Data</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/about/">About</a>
+                </li>
+                
+            </ul>
+            <script>
+                function site_search() {
+                    var query = document.getElementById("site-search").value
+                    window.open("http://localhost:4000/search/index.html?q=" + encodeURIComponent(query), "_self" );
+                }
+            </script>
+            <form class="form-inline my-2 my-lg-0" role="search" id="search" onsubmit="site_search(); return false;">
+                <div class="input-group">
+                    <input id="site-search" class="form-control " type="text" placeholder="Search" aria-label="Search box">
+                    <div class="input-group-append">
+                        <button class="btn btn-light" type="submit">
+                            <span id="search-icon"><svg viewBox="0 0 1024 974" height="16px" width="20px"><path d="M960 832L710.875 582.875C746.438 524.812 768 457.156 768 384 768 171.96900000000005 596 0 384 0 171.969 0 0 171.96900000000005 0 384c0 212 171.969 384 384 384 73.156 0 140.812-21.562 198.875-57L832 960c17.5 17.5 46.5 17.375 64 0l64-64C977.5 878.5 977.5 849.5 960 832zM384 640c-141.375 0-256-114.625-256-256s114.625-256 256-256 256 114.625 256 256S525.375 640 384 640z"/></svg></span>
+                            <span class="sr-only">Search</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</nav>
+
+    <main role="main">
+    <div class="container mt-2">
+    <ul class="breadcrumb">
+        <li class="breadcrumb-item"><a href="http://localhost:4000/">Potlach Demo</a></li>
+        <li class="breadcrumb-item"><a href="http://localhost:4000/browse/">Browse</a></li>
+        <li id="bc-title" class="breadcrumb-item active">Not found?</li>
+    </ul>
+
+    <div class="">
+        <h2 id="item-title" class="">Collection Item</h2>
+    </div>
+
+    <div class="row mt-3">
+
+        <div class="col-md-4" >
+            <figure class="figure w-100 text-center p-3" id="item-image"></figure>
+            <div id="item-link" class="text-center my-2"></div>
+        </div>
+        <div class="col-md-8">
+            <div id="item-metadata" class="metadata">
+                <h3>Sorry, item not found.</h3>
+            </div>
+        </div> 
+    </div>
+
+    <div class="text-center">
+        <a class="btn btn-secondary" href="/browse/">&laquo; Back to Collection Browse</a>
+    </div>
+</div>
+
+    </main>
+    <footer class="navbar navbar-dark bg-secondary mt-3">
+    <div class="container py-3">
+        <a class="navbar-brand" href="http://localhost:4000/">Potlach Demo</a>
+        <span class="navbar-text navbar-nav mr-auto">2018</span><br>
+        <span class="navbar-text navbar-nav">built with <a href="https://github.com/CollectionBuilder/collectionbuilder-gh" target="_blank">collectionbuilder-gh <img src="/assets/images/collectionbuilder2.png" style="height:1em;"></a> </span>
+    </div>
+</footer>
+
+    <!-- Optional JS for Bootstrap: jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="/assets/js/jquery-3.3.1.min.js"></script>
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+<!-- load other js -->
+<script>
+var items = {"test001" : { "filename": "test001.jpg", "title": "Administration Building, University of Idaho, No. 30", "creator": "Pacific Photo Co.", "date": "1910", "description": "Photographic postcard of the University of Idaho administration building in Moscow, Idaho.", "subject": "universities;buildings;campuses;picture postcards", "place": "Moscow, Idaho", "latitude": "46.725562", "longitude": "-117.009633", "collection": "PG 9, Postcard Collection, University of Idaho Library Special Collections and Archives", "identifier": "pg_9_12_01bl", "type": "Image;StillImage", "format": "image/jpeg", "rightsstatement": "http://rightsstatements.org/vocab/NoC-US/1.0/ " }, 
+    "test002" : { "filename": "test002.jpg", "title": "Noll Aduitorium [Bryan Hall]", "creator": "Patton Post Card Co.", "date": "1915-11-03", "description": "Photographic postcard of Bryan Hall on the Washington State University campus (mislabeled 'Noll Aduitorium'). Card is damaged and held together with tape.", "subject": "universities;buildings;clock towers (towers);picture postcards", "place": "Pullman, Washington", "latitude": "46.731643", "longitude": "-117.165625", "collection": "PG 9, Postcard Collection, University of Idaho Library Special Collections and Archives", "identifier": "Postcard_023", "type": "Image;StillImage", "format": "image/jpeg", "rightsstatement": "http://rightsstatements.org/vocab/NoC-US/1.0/ " }, 
+    "test003" : { "filename": "test003.jpg", "title": "University farms", "creator": null, "date": "1895", "description": "1895 photograph of University Farms. Moscow in background. [PG1_105-15]", "subject": "campuses;farms;horse-drawn vehicles", "place": "Moscow, Idaho", "latitude": "46.729654", "longitude": "-117.024232", "collection": "PG 1, University of Idaho Campus Photographs, University of Idaho Library Special Collections and Archives", "identifier": "PG1_105-15", "type": "Image;StillImage", "format": "image/jpeg", "rightsstatement": "http://rightsstatements.org/vocab/NoC-US/1.0/ " }, 
+    "test004" : { "filename": "test004.jpg", "title": "University farms, University of Idaho in distance", "creator": null, "date": "1900", "description": "1900 photograph of University Farms. Spanish American War Memorial in background. [PG1_105-16]", "subject": "campuses;farms;fields (land)", "place": "Moscow, Idaho", "latitude": "46.729654", "longitude": "-117.024232", "collection": "PG 1, University of Idaho Campus Photographs, University of Idaho Library Special Collections and Archives", "identifier": "PG1_105-16", "type": "Image;StillImage", "format": "image/jpeg", "rightsstatement": "http://rightsstatements.org/vocab/NoC-US/1.0/ " }, 
+    "test005" : { "filename": "test005.jpg", "title": "Administration Building, Washington State College", "creator": "Johnson", "date": "1905", "description": "Photographic postcard of the administration building on the Washington State University campus in Pullman, Washington", "subject": "universities;buildings;campuses;picture postcards", "place": "Pullman, Washington", "latitude": "46.731465", "longitude": "-117.167398", "collection": "PG 9, Postcard Collection, University of Idaho Library Special Collections and Archives", "identifier": "pg_9_76_02", "type": "Image;StillImage", "format": "image/jpeg", "rightsstatement": "http://rightsstatements.org/vocab/NoC-US/1.0/ " }, 
+    "test006" : { "filename": "test006.pdf", "title": "Tacoma High School, Tacoma, Washington", "creator": "Central News Company", "date": "1909-07-17", "description": "Postcard is of a Tacoma, Washington High School, now named Stadium High School. Postmark 7/17/1909, Tacoma, WA. Destination Helena, MT.", "subject": "high schools (buildings);historic buildings;trees;horse-drawn vehicles;picture postcards;flagpoles;flags", "place": "Tacoma, Washington", "latitude": "47.265893", "longitude": "-122.448445", "collection": "PG 107, Knowles Postcard Collection, University of Idaho Library Special Collections and Archives", "identifier": "Postcard_044", "type": "Image;StillImage", "format": "image/jpeg", "rightsstatement": "http://rightsstatements.org/vocab/NoC-US/1.0/ " }, 
+    "test007" : { "filename": "test007.pdf", "title": "Pierce County Court House, Tacoma, Washington", "creator": "Portland Post Card Co.", "date": "1911-02-23", "description": "Postcard is of the old Pierce County Courthouse in Tacoma, Washington. The building was demolished in 1959. Postmark 2/23/1911, Tacoma, WA. Destination Los Angeles, CA.", "subject": "public buildings;county courthouses;trees;historic buildings;picture postcards", "place": "Tacoma, Washington", "latitude": "47.254744", "longitude": "-122.44638", "collection": "PG 107, Knowles Postcard Collection, University of Idaho Library Special Collections and Archives", "identifier": "Postcard_041", "type": "Image;StillImage", "format": "image/jpeg", "rightsstatement": "http://rightsstatements.org/vocab/NoC-US/1.0/ " }, 
+    "test008" : { "filename": "test008.pdf", "title": "Spokane County Court House, Spokane, Washington", "creator": "Spokane Post Card Co.", "date": "1912-09-08", "description": "Postcard is of the Spokane County Courthouse in Spokane, Washington. Postmark 9/8/1912, Spokane, WA. Destination San Francisco, CA.", "subject": "public buildings;county courthouses;trees;picture postcards", "place": "Spokane, Washington", "latitude": "47.66432", "longitude": "-117.428031", "collection": "PG 107, Knowles Postcard Collection, University of Idaho Library Special Collections and Archives", "identifier": "Postcard_032", "type": "Image;StillImage", "format": "image/jpeg", "rightsstatement": "http://rightsstatements.org/vocab/NoC-US/1.0/ " }, 
+    "test009" : { "filename": "test009.pdf", "title": "Whatcom County Court House, Bellingham, Washington", "creator": "Sandison, Lowman & Hanford Co.", "date": "1920", "description": "Postcard of the Whatcom County Courthouse in Bellingham, Washington.", "subject": "public buildings;county courthouses;trees;picture postcards", "place": "Bellingham, Washington", "latitude": "48.754334", "longitude": "-122.480156", "collection": "PG 107, Knowles Postcard Collection, University of Idaho Library Special Collections and Archives", "identifier": "Postcard_018", "type": "Image;StillImage", "format": "image/jpeg", "rightsstatement": "http://rightsstatements.org/vocab/NoC-US/1.0/ " }, 
+    "test010" : { "filename": "test010.pdf", "title": "Hotel Seattle, Seattle, Washington", "creator": null, "date": "1901", "description": "Postcard is of the Seattle Hotel in Seattle, Washington.", "subject": "hotels (public accommodations);buildings;men;streetcars;photographic", "place": "Seattle, Washington", "latitude": "47.601702", "longitude": "-122.334084", "collection": "PG 107, Knowles Postcard Collection, University of Idaho Library Special Collections and Archives", "identifier": "Postcard_030", "type": "Image;StillImage", "format": "image/jpeg", "rightsstatement": "http://rightsstatements.org/vocab/NoC-US/1.0/ " }, 
+    "test011" : { "filename": "test011.jpg", "title": "Snowstorm Concentrator, Troy, Montana. No. 6.", "creator": null, "date": "1911", "description": "Postcard of the concentrator building of the Snow Storm mine in Troy, Montana.", "subject": "mining;mines (extracting complexes);mine buildings;men;photographic postcards", "place": "Troy, Montana", "latitude": "48.453898", "longitude": "-115.904821", "collection": "PG 9, Postcard Collection, University of Idaho Library Special Collections and Archives", "identifier": "pg_9_25_12", "type": "Image;StillImage", "format": "image/jpeg", "rightsstatement": "http://rightsstatements.org/vocab/NoC-US/1.0/ " }, 
+    "test012" : { "filename": "test012.jpg", "title": "Natatorium, Boise, Idaho", "creator": "Wesley Andrews, Inc.", "date": "1912", "description": "Postcard is a photograph of a geothermal swimming pool that was located in Boise, Idaho.", "subject": "swimming pools;trees;buildings;indoor swimming pools;photographic postcards", "place": "Boise, Idaho", "latitude": "43.602705", "longitude": "-116.173324", "collection": "PG 9, Postcard Collection, University of Idaho Library Special Collections and Archives", "identifier": "pg_9_01_04h", "type": "Image;StillImage", "format": "image/jpeg", "rightsstatement": "http://rightsstatements.org/vocab/NoC-US/1.0/ " }, 
+    "test013" : { "filename": "test013.jpg", "title": "C. Weisgerber Brewery. Lewiston, Idaho.", "creator": null, "date": "1905", "description": "Image of brewery building with horse cart and dog sitting on the street.", "subject": "breweries", "place": "Lewiston, Idaho", "latitude": "46.409184", "longitude": "-117.001734", "collection": "PG 5, University of Idaho Library Special Collections and Archives", "identifier": "5-007-8c", "type": "Image;StillImage", "format": "image/jpeg", "rightsstatement": "http://rightsstatements.org/vocab/NoC-US/1.0/ " }, 
+    "test014" : { "filename": "test014.jpg", "title": "Albion State Normal School. Old Administration Building. Albion, Idaho.", "creator": "Engstrom Studio, Lewiston", "date": "1915", "description": "Photograph of old Administration Building.", "subject": "schools", "place": "Albion, Idaho", "latitude": "42.412826", "longitude": "-113.576789", "collection": "PG 5, University of Idaho Library Special Collections and Archives", "identifier": "5-005-1o", "type": "Image;StillImage", "format": "image/jpeg", "rightsstatement": "http://rightsstatements.org/vocab/NoC-US/1.0/ " }, 
+    "test015" : { "filename": "test015.jpg", "title": "Cottonwood Public School [under construction?]. Cottonwood, Idaho.", "creator": null, "date": "1912", "description": "Twelve men posed outside building", "subject": "schools", "place": "Cottonwood, Idaho", "latitude": "46.051699", "longitude": "-116.351969", "collection": "PG 5, University of Idaho Library Special Collections and Archives", "identifier": "5-017-4a", "type": "Image;StillImage", "format": "image/jpeg", "rightsstatement": "http://rightsstatements.org/vocab/NoC-US/1.0/ " }
+    
+};
+var queryString = window.location.search.substring(1).split("=")[1];
+var record = items[queryString];
+var itemTitle = record.title;
+document.getElementById("bc-title").innerHTML = itemTitle;
+document.getElementById("item-title").innerHTML = itemTitle;
+var itemImage = '<img class="img-fluid img-thumbnail" src="/objects/thumbs/' + queryString + '_sm.jpg" alt="item thumbnail">';
+document.getElementById("item-image").innerHTML = itemImage;
+var itemLink = '<a href="http://localhost:4000/objects/' + record.filename + '" target="_blank" class="btn btn-primary" title="Object download">Download Object</a>';
+document.getElementById("item-link").innerHTML = itemLink;
+var fields = '<table class="table">' + '<tr><th scope="row" class="field">Item title:</th> <td class="field-value">' + record.title + '</td></tr>' + '<tr><th scope="row" class="field">Creator:</th> <td class="field-value">' + record.creator + '</td></tr>' + '<tr><th scope="row" class="field">Date Created:</th> <td class="field-value">' + record.date + '</td></tr>' + '<tr><th scope="row" class="field">Description:</th> <td class="field-value">' + record.description + '</td></tr>' + '<tr><th scope="row" class="field">Subjects:</th> <td class="field-value">' + record.subject + '</td></tr>' + '<tr><th scope="row" class="field">Location:</th> <td class="field-value">' + record.place + '</td></tr>' + '<tr><th scope="row" class="field">Latitude:</th> <td class="field-value">' + record.latitude + '</td></tr>' + '<tr><th scope="row" class="field">Longitude:</th> <td class="field-value">' + record.longitude + '</td></tr>' + '<tr><th scope="row" class="field">Source Collection:</th> <td class="field-value">' + record.collection + '</td></tr>' + '<tr><th scope="row" class="field">Source Identifier:</th> <td class="field-value">' + record.identifier + '</td></tr>' + '<tr><th scope="row" class="field">Type:</th> <td class="field-value">' + record.type + '</td></tr>' + '<tr><th scope="row" class="field">Format:</th> <td class="field-value">' + record.format + '</td></tr>' + '<tr><th scope="row" class="field">Rights:</th> <td class="field-value">' + record.rightsstatement + '</td></tr>' + '</table>';
+document.getElementById("item-metadata").innerHTML = fields;
+</script>
+
+
+
+
+
+
+
+
+  </body>
+
+</html>

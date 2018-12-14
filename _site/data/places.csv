@@ -1,0 +1,13 @@
+location,count,link
+"Albion, Idaho",1,"http://localhost:4000/browse/#Albion,%20Idaho"
+"Bellingham, Washington",1,"http://localhost:4000/browse/#Bellingham,%20Washington"
+"Boise, Idaho",1,"http://localhost:4000/browse/#Boise,%20Idaho"
+"Cottonwood, Idaho",1,"http://localhost:4000/browse/#Cottonwood,%20Idaho"
+"Lewiston, Idaho",1,"http://localhost:4000/browse/#Lewiston,%20Idaho"
+"Moscow, Idaho",3,"http://localhost:4000/browse/#Moscow,%20Idaho"
+"Pullman, Washington",2,"http://localhost:4000/browse/#Pullman,%20Washington"
+"Seattle, Washington",1,"http://localhost:4000/browse/#Seattle,%20Washington"
+"Spokane, Washington",1,"http://localhost:4000/browse/#Spokane,%20Washington"
+"Tacoma, Washington",2,"http://localhost:4000/browse/#Tacoma,%20Washington"
+"Troy, Montana",1,"http://localhost:4000/browse/#Troy,%20Montana"
+

@@ -1,0 +1,246 @@
+{
+    "type": "FeatureCollection",
+    "features": [ 
+        
+        {
+            "type":"Feature",
+            "geometry":{
+                "type":"Point",
+                "coordinates":[-117.009633,46.725562]
+            },            
+            "properties":{
+                "title": "Administration Building, University of Idaho, No. 30",
+                "creator": "Pacific Photo Co.",
+                "date": "1910",
+                "subject": "universities;buildings;campuses;picture postcards",
+                "place": "Moscow, Idaho",
+                "identifier": null,
+                "link": "http://localhost:4000/browse/item.html?id=test001"
+            }
+        }, 
+        {
+            "type":"Feature",
+            "geometry":{
+                "type":"Point",
+                "coordinates":[-117.165625,46.731643]
+            },            
+            "properties":{
+                "title": "Noll Aduitorium [Bryan Hall]",
+                "creator": "Patton Post Card Co.",
+                "date": "1915-11-03",
+                "subject": "universities;buildings;clock towers (towers);picture postcards",
+                "place": "Pullman, Washington",
+                "identifier": null,
+                "link": "http://localhost:4000/browse/item.html?id=test002"
+            }
+        }, 
+        {
+            "type":"Feature",
+            "geometry":{
+                "type":"Point",
+                "coordinates":[-117.024232,46.729654]
+            },            
+            "properties":{
+                "title": "University farms",
+                "creator": null,
+                "date": "1895",
+                "subject": "campuses;farms;horse-drawn vehicles",
+                "place": "Moscow, Idaho",
+                "identifier": null,
+                "link": "http://localhost:4000/browse/item.html?id=test003"
+            }
+        }, 
+        {
+            "type":"Feature",
+            "geometry":{
+                "type":"Point",
+                "coordinates":[-117.024232,46.729654]
+            },            
+            "properties":{
+                "title": "University farms, University of Idaho in distance",
+                "creator": null,
+                "date": "1900",
+                "subject": "campuses;farms;fields (land)",
+                "place": "Moscow, Idaho",
+                "identifier": null,
+                "link": "http://localhost:4000/browse/item.html?id=test004"
+            }
+        }, 
+        {
+            "type":"Feature",
+            "geometry":{
+                "type":"Point",
+                "coordinates":[-117.167398,46.731465]
+            },            
+            "properties":{
+                "title": "Administration Building, Washington State College",
+                "creator": "Johnson",
+                "date": "1905",
+                "subject": "universities;buildings;campuses;picture postcards",
+                "place": "Pullman, Washington",
+                "identifier": null,
+                "link": "http://localhost:4000/browse/item.html?id=test005"
+            }
+        }, 
+        {
+            "type":"Feature",
+            "geometry":{
+                "type":"Point",
+                "coordinates":[-122.448445,47.265893]
+            },            
+            "properties":{
+                "title": "Tacoma High School, Tacoma, Washington",
+                "creator": "Central News Company",
+                "date": "1909-07-17",
+                "subject": "high schools (buildings);historic buildings;trees;horse-drawn vehicles;picture postcards;flagpoles;flags",
+                "place": "Tacoma, Washington",
+                "identifier": null,
+                "link": "http://localhost:4000/browse/item.html?id=test006"
+            }
+        }, 
+        {
+            "type":"Feature",
+            "geometry":{
+                "type":"Point",
+                "coordinates":[-122.44638,47.254744]
+            },            
+            "properties":{
+                "title": "Pierce County Court House, Tacoma, Washington",
+                "creator": "Portland Post Card Co.",
+                "date": "1911-02-23",
+                "subject": "public buildings;county courthouses;trees;historic buildings;picture postcards",
+                "place": "Tacoma, Washington",
+                "identifier": null,
+                "link": "http://localhost:4000/browse/item.html?id=test007"
+            }
+        }, 
+        {
+            "type":"Feature",
+            "geometry":{
+                "type":"Point",
+                "coordinates":[-117.428031,47.66432]
+            },            
+            "properties":{
+                "title": "Spokane County Court House, Spokane, Washington",
+                "creator": "Spokane Post Card Co.",
+                "date": "1912-09-08",
+                "subject": "public buildings;county courthouses;trees;picture postcards",
+                "place": "Spokane, Washington",
+                "identifier": null,
+                "link": "http://localhost:4000/browse/item.html?id=test008"
+            }
+        }, 
+        {
+            "type":"Feature",
+            "geometry":{
+                "type":"Point",
+                "coordinates":[-122.480156,48.754334]
+            },            
+            "properties":{
+                "title": "Whatcom County Court House, Bellingham, Washington",
+                "creator": "Sandison, Lowman & Hanford Co.",
+                "date": "1920",
+                "subject": "public buildings;county courthouses;trees;picture postcards",
+                "place": "Bellingham, Washington",
+                "identifier": null,
+                "link": "http://localhost:4000/browse/item.html?id=test009"
+            }
+        }, 
+        {
+            "type":"Feature",
+            "geometry":{
+                "type":"Point",
+                "coordinates":[-122.334084,47.601702]
+            },            
+            "properties":{
+                "title": "Hotel Seattle, Seattle, Washington",
+                "creator": null,
+                "date": "1901",
+                "subject": "hotels (public accommodations);buildings;men;streetcars;photographic",
+                "place": "Seattle, Washington",
+                "identifier": null,
+                "link": "http://localhost:4000/browse/item.html?id=test010"
+            }
+        }, 
+        {
+            "type":"Feature",
+            "geometry":{
+                "type":"Point",
+                "coordinates":[-115.904821,48.453898]
+            },            
+            "properties":{
+                "title": "Snowstorm Concentrator, Troy, Montana. No. 6.",
+                "creator": null,
+                "date": "1911",
+                "subject": "mining;mines (extracting complexes);mine buildings;men;photographic postcards",
+                "place": "Troy, Montana",
+                "identifier": null,
+                "link": "http://localhost:4000/browse/item.html?id=test011"
+            }
+        }, 
+        {
+            "type":"Feature",
+            "geometry":{
+                "type":"Point",
+                "coordinates":[-116.173324,43.602705]
+            },            
+            "properties":{
+                "title": "Natatorium, Boise, Idaho",
+                "creator": "Wesley Andrews, Inc.",
+                "date": "1912",
+                "subject": "swimming pools;trees;buildings;indoor swimming pools;photographic postcards",
+                "place": "Boise, Idaho",
+                "identifier": null,
+                "link": "http://localhost:4000/browse/item.html?id=test012"
+            }
+        }, 
+        {
+            "type":"Feature",
+            "geometry":{
+                "type":"Point",
+                "coordinates":[-117.001734,46.409184]
+            },            
+            "properties":{
+                "title": "C. Weisgerber Brewery. Lewiston, Idaho.",
+                "creator": null,
+                "date": "1905",
+                "subject": "breweries",
+                "place": "Lewiston, Idaho",
+                "identifier": null,
+                "link": "http://localhost:4000/browse/item.html?id=test013"
+            }
+        }, 
+        {
+            "type":"Feature",
+            "geometry":{
+                "type":"Point",
+                "coordinates":[-113.576789,42.412826]
+            },            
+            "properties":{
+                "title": "Albion State Normal School. Old Administration Building. Albion, Idaho.",
+                "creator": "Engstrom Studio, Lewiston",
+                "date": "1915",
+                "subject": "schools",
+                "place": "Albion, Idaho",
+                "identifier": null,
+                "link": "http://localhost:4000/browse/item.html?id=test014"
+            }
+        }, 
+        {
+            "type":"Feature",
+            "geometry":{
+                "type":"Point",
+                "coordinates":[-116.351969,46.051699]
+            },            
+            "properties":{
+                "title": "Cottonwood Public School [under construction?]. Cottonwood, Idaho.",
+                "creator": null,
+                "date": "1912",
+                "subject": "schools",
+                "place": "Cottonwood, Idaho",
+                "identifier": null,
+                "link": "http://localhost:4000/browse/item.html?id=test015"
+            }
+        }
+    ]
+}

@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Home | Potlach Demo</title>
+<link rel="shortcut icon" type="image/x-icon" href="http://localhost:4000/favicon.ico">
+<meta http-equiv="Content-Language" content="en-us" >
+
+
+
+<link rel="stylesheet" href="http://localhost:4000/assets/css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/custom.css" type="text/css">
+
+<!--<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>-->
+
+
+
+  </head>
+
+  <body>
+    
+<style>
+#home-banner {
+    background-image: url('/objects/test001.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+</style>
+<div class="jumbotron text-white pb-0 mb-0 rounded-0" id="home-banner">
+    <div class="jumbo-text p-4 container">
+        <h1 class="display-4">Potlach Demo</h1>
+        <p>a demo site</p>
+    </div>
+</div>
+    <nav class="navbar navbar-expand-md navbar-dark bg-secondary">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#page-nav" aria-controls="page-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="page-nav">
+            <ul class="navbar-nav mr-auto">
+                
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/browse/">Browse</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/map/">Map</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/subjects/">Subjects</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/timeline/">Timeline</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/data/">Data</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/about/">About</a>
+                </li>
+                
+            </ul>
+            <script>
+                function site_search() {
+                    var query = document.getElementById("site-search").value
+                    window.open("http://localhost:4000/search/index.html?q=" + encodeURIComponent(query), "_self" );
+                }
+            </script>
+            <form class="form-inline my-2 my-lg-0" role="search" id="search" onsubmit="site_search(); return false;">
+                <div class="input-group">
+                    <input id="site-search" class="form-control " type="text" placeholder="Search" aria-label="Search box">
+                    <div class="input-group-append">
+                        <button class="btn btn-light" type="submit">
+                            <span id="search-icon"><svg viewBox="0 0 1024 974" height="16px" width="20px"><path d="M960 832L710.875 582.875C746.438 524.812 768 457.156 768 384 768 171.96900000000005 596 0 384 0 171.969 0 0 171.96900000000005 0 384c0 212 171.969 384 384 384 73.156 0 140.812-21.562 198.875-57L832 960c17.5 17.5 46.5 17.375 64 0l64-64C977.5 878.5 977.5 849.5 960 832zM384 640c-141.375 0-256-114.625-256-256s114.625-256 256-256 256 114.625 256 256S525.375 640 384 640z"/></svg></span>
+                            <span class="sr-only">Search</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</nav>
+
+    <main role="main">
+    <div class="container mt-4">
+    <div class="row">
+  <div class="col-md-4">  
+
+    <a class="card mb-3" href="/data/">
+  <div class="card-body">
+    <h5 class="card-title">Collection Items</h5>
+    <p class="card-text">15 objects</p>
+  </div>
+</a>
+
+    <a class="card mb-3" href="/timeline/">
+  <div class="card-body">
+    <h5 class="card-title">Time Span</h5>
+    <p class="card-text">1895 to 1920</p>
+  </div>
+</a>
+
+    <div class="card mb-3">
+  <div class="card-body">
+    <h5 class="card-title">Top Subjects</h5>
+    <p class="card-text">
+        
+        <a class="btn btn-sm btn-info m-1" href="/browse/#Picture%20postcards">Picture postcards</a>
+        <a class="btn btn-sm btn-info m-1" href="/browse/#Trees">Trees</a>
+        <a class="btn btn-sm btn-info m-1" href="/browse/#Buildings">Buildings</a>
+        <a class="btn btn-sm btn-info m-1" href="/browse/#Campuses">Campuses</a>
+        <a class="btn btn-sm btn-info m-1" href="/browse/#Universities">Universities</a>
+        <a class="btn btn-sm btn-info m-1" href="/browse/#Public%20buildings">Public buildings</a>
+    </p>
+  </div>
+</div>
+
+    <div class="card mb-3">
+  <div class="card-body">
+    <h5 class="card-title">Locations</h5><p class="card-text">
+        <a class="btn btn-sm btn-outline-secondary m-1" href="http://localhost:4000/browse/#Moscow,%20Idaho">Moscow, Idaho</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="http://localhost:4000/browse/#Tacoma,%20Washington">Tacoma, Washington</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="http://localhost:4000/browse/#Pullman,%20Washington">Pullman, Washington</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="http://localhost:4000/browse/#Spokane,%20Washington">Spokane, Washington</a>
+        
+    </p>
+  </div>
+</div>
+
+
+  </div>
+  <div class="col-md-8">
+
+  <div class="card mb-3">
+  <div class="card-body">
+    <h5 class="card-title">Description</h5>
+    <p class="card-text">CollectionBuilder-GH is a template for creating small digital collection exhibits on GitHub Pages designed for teaching digital library skills</p>
+    <a class="btn btn-primary" href="/about/" >Learn More &raquo;</a>
+  </div>
+</div>
+
+  <style>
+    #imageCarousel .carousel-item { height: 300px; }
+</style>
+<div class="card mb-3">
+    <div class="card-body">
+        <h5 class="card-title">Sample Items</h5>
+        <div class="row">
+            <div class="col-md-12 pb-3">
+                <div id="imageCarousel" class="carousel slide bg-secondary rounded" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        
+                        <li data-target="#imageCarousel" data-slide-to="1" class="active"></li>
+                        
+                        <li data-target="#imageCarousel" data-slide-to="2" class=""></li>
+                        
+                        <li data-target="#imageCarousel" data-slide-to="3" class=""></li>
+                        
+                        <li data-target="#imageCarousel" data-slide-to="4" class=""></li>
+                        
+                        <li data-target="#imageCarousel" data-slide-to="5" class=""></li>
+                        
+                        <li data-target="#imageCarousel" data-slide-to="6" class=""></li>
+                        
+                        <li data-target="#imageCarousel" data-slide-to="7" class=""></li>
+                        
+                        <li data-target="#imageCarousel" data-slide-to="8" class=""></li>
+                        
+                        <li data-target="#imageCarousel" data-slide-to="9" class=""></li>
+                        
+                    </ol>
+                    <div id="carouselInner" class="carousel-inner">
+                        
+                    </div>
+                    <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#imageCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  
+  </div>
+  
+</div>
+</div>
+
+    </main>
+    <footer class="navbar navbar-dark bg-secondary mt-3">
+    <div class="container py-3">
+        <a class="navbar-brand" href="http://localhost:4000/">Potlach Demo</a>
+        <span class="navbar-text navbar-nav mr-auto">2018</span><br>
+        <span class="navbar-text navbar-nav">built with <a href="https://github.com/CollectionBuilder/collectionbuilder-gh" target="_blank">collectionbuilder-gh <img src="/assets/images/collectionbuilder2.png" style="height:1em;"></a> </span>
+    </div>
+</footer>
+
+    <!-- Optional JS for Bootstrap: jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="/assets/js/jquery-3.3.1.min.js"></script>
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+<!-- load other js -->
+
+
+
+
+
+
+
+<script> 
+    var carouselItems = [ { "id": "test001", "title": "Administration Building, University of Idaho, No. 30" }, { "id": "test002", "title": "Noll Aduitorium [Bryan Hall]" }, { "id": "test003", "title": "University farms" }, { "id": "test004", "title": "University farms, University of Idaho in distance" }, { "id": "test005", "title": "Administration Building, Washington State College" }, { "id": "test006", "title": "Tacoma High School, Tacoma, Washington" }, { "id": "test007", "title": "Pierce County Court House, Tacoma, Washington" }, { "id": "test008", "title": "Spokane County Court House, Spokane, Washington" }, { "id": "test009", "title": "Whatcom County Court House, Bellingham, Washington" }, { "id": "test010", "title": "Hotel Seattle, Seattle, Washington" }, { "id": "test011", "title": "Snowstorm Concentrator, Troy, Montana. No. 6." }, { "id": "test012", "title": "Natatorium, Boise, Idaho" }, { "id": "test013", "title": "C. Weisgerber Brewery. Lewiston, Idaho." }, { "id": "test014", "title": "Albion State Normal School. Old Administration Building. Albion, Idaho." }, { "id": "test015", "title": "Cottonwood Public School [under construction?]. Cottonwood, Idaho." }];
+    var carousel = document.getElementById("carouselInner");
+    carouselItems.sort(function() { return 0.5 - Math.random() });
+    var i;
+    for (i=0; i < 9; i++) {
+        slide = "<div class='carousel-item text-center py-2'><img class='image-fluid mx-auto h-100' alt='image highlight' src='/objects/thumbs/" + carouselItems[i].id + "_sm.jpg'> <div class='carousel-caption'> <h5><a href='http://localhost:4000/browse/item.html?id=" + carouselItems[i].id + "' class='btn btn-sm btn-primary'>View Item</a></h5></div> </div>";
+        carousel.innerHTML += slide;
+    }
+    $(".carousel-item").first().addClass("active");
+</script>
+
+
+  </body>
+
+</html>
